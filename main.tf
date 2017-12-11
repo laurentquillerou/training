@@ -33,7 +33,7 @@ variable "aws_secret_key" {
 }
 
 variable "num_webs" {
-  default = "3"
+  default = "1"
 }
 
 variable "aws_region" {
@@ -51,12 +51,6 @@ variable "cmd" {
   default = "whoami"
 }
 
-/*
-  module "example" {
-  source  = "./example-module"
-  command = "${var.cmd}"
-}
-*/
 resource "aws_instance" "web" {
   ami           = "ami-fcc4db98"
   instance_type = "t2.micro"
