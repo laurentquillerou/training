@@ -56,7 +56,7 @@ variable "cmd" {
   source  = "./example-module"
   command = "${var.cmd}"
 }
-*/
+
 resource "aws_instance" "web" {
   ami           = "ami-fcc4db98"
   instance_type = "t2.micro"
