@@ -33,7 +33,7 @@ variable "aws_secret_key" {
 }
 
 variable "num_webs" {
-  default = "2"
+  default = "3"
 }
 
 variable "aws_region" {
