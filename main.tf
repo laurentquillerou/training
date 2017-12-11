@@ -33,7 +33,7 @@ variable "aws_secret_key" {
 }
 
 variable "num_webs" {
-  default = "3"
+  default = "1"
 }
 
 variable "aws_region" {
@@ -49,12 +49,6 @@ provider "aws" {
 
 variable "cmd" {
   default = "whoami"
-}
-
-/*
-  module "example" {
-  source  = "./example-module"
-  command = "${var.cmd}"
 }
 
 resource "aws_instance" "web" {
